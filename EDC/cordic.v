@@ -1,11 +1,11 @@
 
 
 
-// `define VALID_FLAG
+//`define VALID_FLAG
 
 
-// `define DEGREE_8_8
-`define RADIAN_16
+`define DEGREE_8_8
+//`define RADIAN_16
 
 
 `define XY_BITS    16
@@ -57,11 +57,7 @@ endmodule
 module rotator (
   input wire clk,
   input wire rst,
-`ifdef ITERATE
-  input wire init,
-  input wire [`ITERATION_BITS:0] iteration,
-  input wire signed [`THETA_BITS:0] tangle,
-`endif
+
   input wire signed  [`XY_BITS:0]    x_i,
   input wire signed  [`XY_BITS:0]    y_i,
   input wire signed  [`THETA_BITS:0] z_i,
@@ -84,9 +80,7 @@ module rotator (
 `ifdef COMBINATORIAL
   always @ *
 `endif
-`ifdef ITERATE
-  always @ (posedge clk)
-`endif
+
 `ifdef PIPELINE
   always @ (posedge clk)
 `endif
@@ -95,16 +89,8 @@ module rotator (
       y_1 <= 0;
       z_1 <= 0;
     end else begin
-`ifdef ITERATE
-      if (init) begin
-        x_1 <= x_i;
-        y_1 <= y_i;
-        z_1 <= z_i;
-      end else
-`endif
-`ifdef ROTATE
-      if (z_i < 0) begin
-`endif
+
+
 `ifdef VECTOR
       if (y_i > 0) begin
 `endif
@@ -128,9 +114,7 @@ endmodule
 module cordic (
   input wire clk,
   input wire rst,
-`ifdef ITERATE
-  input wire init,
-`endif
+
   input wire signed [`XY_BITS:0]    x_i,
   input wire signed [`XY_BITS:0]    y_i,
   input wire signed [`THETA_BITS:0] theta_i,
@@ -138,39 +122,12 @@ module cordic (
   output wire signed [`XY_BITS:0]    x_o,
   output wire signed [`XY_BITS:0]    y_o,
   output wire signed [`THETA_BITS:0] theta_o
-`ifdef VALID_FLAG
+
   ,input wire valid_in, output wire valid_out
-`endif  
+
 );
 
-`ifdef RADIAN_16
-/*
-  arctan table in radian format  16 bit + sign bit.
-*/
-function [`THETA_BITS:0] tanangle;
-  input [3:0] i;
-  begin
-    case (i)
-    4'b0000: tanangle = 17'd25735 ;   //  1/1
-    4'b0001: tanangle = 17'd15192;    //  1/2
-    4'b0010: tanangle = 17'd8027;     //  1/4
-    4'b0011: tanangle = 17'd4075;     //  1/8
-    4'b0100: tanangle = 17'd2045;     //  1/16
-    4'b0101: tanangle = 17'd1024;     //  1/32
-    4'b0110: tanangle = 17'd512;      //  1/64
-    4'b0111: tanangle = 17'd256;      //  1/128
-    4'b1000: tanangle = 17'd128;      //  1/256
-    4'b1001: tanangle = 17'd64;       //  1/512
-    4'b1010: tanangle = 17'd32;       //  1/1024
-    4'b1011: tanangle = 17'd16;       //  1/2048
-    4'b1100: tanangle = 17'd8;        //  1/4096
-    4'b1101: tanangle = 17'd4;        //  1/8192
-    4'b1110: tanangle = 17'd2;        //  1/16k
-    4'b1111: tanangle = 17'd1;        //  1/32k
-    endcase
-  end
-endfunction
-`endif
+
 `ifdef DEGREE_8_8
 /*
    arctan table in degree U(8,8) format 16 bits + sign bit
@@ -213,8 +170,8 @@ endfunction
 `endif // GENERATE_LOOP
 
 `ifdef VALID_FLAG
-  wire [`ITERATIONS-1:0] v;
-  assign valid_out v[`ITERATIONS-1];
+  reg [`ITERATIONS-1:0] v;
+  assign valid_out = v[`ITERATIONS-1];
 always @ (posedge clk or posedge rst)
   if (rst) v <= 0;
   else begin
@@ -225,7 +182,7 @@ always @ (posedge clk or posedge rst)
 
 `ifdef GENERATE_LOOP
 genvar i;
-generate for(i=0;i<`ITERATIONS-1;i=i+1) begin
+generate for(i=0;i<`ITERATIONS-1;i=i+1) begin :rotate
   rotator U (clk,rst,x[i],y[i],z[i],x[i+1],y[i+1],z[i+1]);
   defparam U.iteration = i;
   defparam U.tangle = tanangle(i);
@@ -233,17 +190,7 @@ end
 endgenerate
 `endif
 
-`ifdef ITERATE
-  reg [`ITERATION_BITS:0] iteration;
-  wire signed [`XY_BITS:0] x,y,z;
-  assign x = init ? x_i : x_o;
-  assign y = init ? y_i : y_o;
-  assign z = init ? theta_i : theta_o;
-  always @ (posedge clk or posedge init)
-    if (init) iteration <= 0;
-    else iteration <= iteration + 1;
-  rotator U (clk,rst,init,iteration,tanangle(iteration),x,y,z,x_o,y_o,theta_o);
-`endif
+
 endmodule
 
 

@@ -67,8 +67,6 @@ function H = getHistogram(magnitudes, angles, numBins)
         if      angles(ii) >= 0    && angles(ii) < d10
                 rightPortion = (angles(ii) + d10 )/binSize * magnitudes(ii);
                 leftPortion  = magnitudes(ii) - rightPortion;
-                
-                
                 H(9) = H(9) + leftPortion ;
                 H(1) = H(1) + rightPortion;
         elseif  angles(ii) >= d10  && angles(ii) < d30

@@ -2,10 +2,11 @@ function norms = normalization(Hist)
 
 	[row , col] = size(Hist);
 	sums = 0;
+	v=0;
 
-
-	for ii : row
+	for ii = 1 : row
 		sums = sums + Hist(ii);
+	end
 
 	n = floor(log2(sums));
 
@@ -24,7 +25,7 @@ function norms = normalization(Hist)
 		v=b3;
 	elseif sums > b3&& sums <= e
 		v=e ;
-
+	end
 
 	norms = Hist/v;
 

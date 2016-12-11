@@ -1,7 +1,7 @@
-function H = getHistogramv2(dx,dy, numBins)
+function H = getHistogramv2(dx,dy, mask)
 
-    magnitudes = abs(dx) + abs(dy);
-
+    magnitudes = (abs(dx) + abs(dy)).*mask;
+    numBins = 9;
     % Histogram of cell
     H = zeros(numBins, 1);
     

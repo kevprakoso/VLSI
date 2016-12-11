@@ -1,10 +1,9 @@
-function [dx, dy, img2] = gradient(img)
-img = rgb2gray(img);   
+function [dx, dy] = gradient(img)   
 img = img(3:132, 3:68);
    
    [row, col] = size(img);
-   dx = zeros (row,col, 'double');
-   dy = zeros (row,col, 'double');
+   dx = zeros (row,col, 'uint8');
+   dy = zeros (row,col, 'uint8');
    
    
    for i = 1 : row
@@ -37,7 +36,7 @@ img = img(3:132, 3:68);
    end
    
    % Remove the 1 pixel border.
-    %dx = dx(2 : (size(dx, 1) - 1), 2 : (size(dx, 2) - 1));  % 128 x 64
-    %dy = dy(2 : (size(dy, 1) - 1), 2 : (size(dy, 2) - 1));  % 128 x 64
-    img2 = img;
+    dx = dx(2 : (size(dx, 1) - 1), 2 : (size(dx, 2) - 1));  % 128 x 64
+    dy = dy(2 : (size(dy, 1) - 1), 2 : (size(dy, 2) - 1));  % 128 x 64
+
 end

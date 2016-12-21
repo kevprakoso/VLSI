@@ -656,3 +656,6 @@ force -freeze sim:/read_file/enable 1 0
 run
 run
 run
+run -all
+# Break key hit 
+# Simulation stop requested.

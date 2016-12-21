@@ -1,0 +1,36 @@
+# Reading E:/Software/altera/91/modelsim_ase/tcl/vsim/pref.tcl 
+# OpenFile C:/Users/X450JB/Desktop/VLSI/En_human_detection/imgmodelsim/work/imgproc.mpf 
+# Loading project imgproc
+# Compile of test.vhd was successful.
+vsim -gui work.read_file
+# vsim -gui work.read_file 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.read_file(behavioral)
+# WARNING: No extended dataflow License exists
+add wave \
+{sim:/read_file/valid } \
+{sim:/read_file/sim_file } \
+{sim:/read_file/eof } \
+{sim:/read_file/enable } \
+{sim:/read_file/data_width_bytes } \
+{sim:/read_file/data_width } \
+{sim:/read_file/data } \
+{sim:/read_file/clk } 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: X450JB  Hostname: CHRIS-PC  ProcessID: 1252
+#           Attempting to use alternate WLF file "./wlft6t1m51".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft6t1m51
+force -freeze sim:/read_file/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/read_file/enable 1 0
+run
+run
+run
+run -all
+# Break key hit 
+# Break in Process line__56 at C:/Users/X450JB/Desktop/VLSI/En_human_detection/imgmodelsim/work/test.vhd line 56
+# Compile of read_file.vhd was successful.

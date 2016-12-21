@@ -32,3 +32,627 @@ run
 run
 run
 # Compile of read_file.vhd was successful.
+vsim -gui work.read_file
+# vsim -gui work.read_file 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.read_file(behavioral)
+add wave \
+{sim:/read_file/valid } \
+{sim:/read_file/sim_file } \
+{sim:/read_file/eof } \
+{sim:/read_file/enable } \
+{sim:/read_file/data_width_bytes } \
+{sim:/read_file/data_width } \
+{sim:/read_file/data } \
+{sim:/read_file/clk } 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: X450JB  Hostname: CHRIS-PC  ProcessID: 1252
+#           Attempting to use alternate WLF file "./wlftii0t6a".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftii0t6a
+force -freeze sim:/read_file/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/read_file/enable 1 0
+run
+run
+quit -sim
+vsim -voptargs=+acc work.read_file
+# vsim -voptargs=+acc work.read_file 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.read_file(behavioral)
+# Compile of read_file.vhd was successful.
+vsim -voptargs=+acc work.read_file
+# vsim -voptargs=+acc work.read_file 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.read_file(behavioral)
+add wave \
+{sim:/read_file/valid } \
+{sim:/read_file/sim_file } \
+{sim:/read_file/eof } \
+{sim:/read_file/enable } \
+{sim:/read_file/data_width_bytes } \
+{sim:/read_file/data_width } \
+{sim:/read_file/data } \
+{sim:/read_file/clk } 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: X450JB  Hostname: CHRIS-PC  ProcessID: 1252
+#           Attempting to use alternate WLF file "./wlftbyeva5".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftbyeva5
+force -freeze sim:/read_file/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/read_file/enable 1 0
+run
+# ** Error: (vsim-3859) HREAD Error: Failed to read the STRING
+#    Time: 100 ps  Iteration: 0  Instance: /read_file
+run
+# ** Error: (vsim-3859) HREAD Error: Failed to read the STRING
+#    Time: 200 ps  Iteration: 0  Instance: /read_file
+run
+# ** Error: (vsim-3859) HREAD Error: Failed to read the STRING
+#    Time: 300 ps  Iteration: 0  Instance: /read_file
+run
+# ** Error: (vsim-3859) HREAD Error: Failed to read the STRING
+#    Time: 400 ps  Iteration: 0  Instance: /read_file
+run
+# ** Error: (vsim-3859) HREAD Error: Failed to read the STRING
+#    Time: 500 ps  Iteration: 0  Instance: /read_file
+# Compile of read_file.vhd was successful.
+vsim -voptargs=+acc work.read_file
+# vsim -voptargs=+acc work.read_file 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.read_file(behavioral)
+add wave \
+{sim:/read_file/valid } \
+{sim:/read_file/sim_file } \
+{sim:/read_file/eof } \
+{sim:/read_file/enable } \
+{sim:/read_file/data_width_bytes } \
+{sim:/read_file/data_width } \
+{sim:/read_file/data } \
+{sim:/read_file/clk } 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: X450JB  Hostname: CHRIS-PC  ProcessID: 1252
+#           Attempting to use alternate WLF file "./wlft4ri25i".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft4ri25i
+force -freeze sim:/read_file/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/read_file/enable 1 0
+run
+# ** Error: (vsim-3859) HREAD Error: Failed to read the STRING
+#    Time: 100 ps  Iteration: 0  Instance: /read_file
+run
+# ** Error: (vsim-3859) HREAD Error: Failed to read the STRING
+#    Time: 200 ps  Iteration: 0  Instance: /read_file
+run
+# ** Error: (vsim-3859) HREAD Error: Failed to read the STRING
+#    Time: 300 ps  Iteration: 0  Instance: /read_file
+run
+# ** Error: (vsim-3859) HREAD Error: Failed to read the STRING
+#    Time: 400 ps  Iteration: 0  Instance: /read_file
+run
+# ** Error: (vsim-3859) HREAD Error: Failed to read the STRING
+#    Time: 500 ps  Iteration: 0  Instance: /read_file
+run
+# ** Error: (vsim-3859) HREAD Error: Failed to read the STRING
+#    Time: 600 ps  Iteration: 0  Instance: /read_file
+run
+# ** Error: (vsim-3859) HREAD Error: Failed to read the STRING
+#    Time: 700 ps  Iteration: 0  Instance: /read_file
+run
+# ** Error: (vsim-3859) HREAD Error: Failed to read the STRING
+#    Time: 800 ps  Iteration: 0  Instance: /read_file
+run
+# ** Error: (vsim-3859) HREAD Error: Failed to read the STRING
+#    Time: 900 ps  Iteration: 0  Instance: /read_file
+run
+# ** Error: (vsim-3859) HREAD Error: Failed to read the STRING
+#    Time: 1 ns  Iteration: 0  Instance: /read_file
+# Compile of read_file.vhd was successful.
+vsim -voptargs=+acc work.read_file
+# vsim -voptargs=+acc work.read_file 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.read_file(behavioral)
+add wave \
+{sim:/read_file/valid } \
+{sim:/read_file/sim_file } \
+{sim:/read_file/eof } \
+{sim:/read_file/enable } \
+{sim:/read_file/data_width_bytes } \
+{sim:/read_file/data_width } \
+{sim:/read_file/data } \
+{sim:/read_file/clk } 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: X450JB  Hostname: CHRIS-PC  ProcessID: 1252
+#           Attempting to use alternate WLF file "./wlftee30a0".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftee30a0
+force -freeze sim:/read_file/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/read_file/enable 1 0
+run
+run
+run
+run
+run
+# Compile of read_file.vhd was successful.
+# Compile of read_file.vhd was successful.
+vsim -voptargs=+acc work.read_file
+# vsim -voptargs=+acc work.read_file 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.read_file(behavioral)
+add wave \
+{sim:/read_file/valid } \
+{sim:/read_file/sim_file } \
+{sim:/read_file/eof } \
+{sim:/read_file/enable } \
+{sim:/read_file/data_width_bytes } \
+{sim:/read_file/data_width } \
+{sim:/read_file/data } \
+{sim:/read_file/clk } 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: X450JB  Hostname: CHRIS-PC  ProcessID: 1252
+#           Attempting to use alternate WLF file "./wlfta8cga4".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfta8cga4
+force -freeze sim:/read_file/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/read_file/enable 1 0
+run
+# ** Fatal: (vsim-3471) Slice range (35 downto 0) does not belong to the prefix index range (15 downto 0).
+#    Time: 100 ps  Iteration: 0  Process: /read_file/line__56 File: C:/Users/X450JB/Desktop/VLSI/VLSI/LSI-Contest/RTL/read_file/read_file.vhd
+# Fatal error in Process line__56 at C:/Users/X450JB/Desktop/VLSI/VLSI/LSI-Contest/RTL/read_file/read_file.vhd line 69
+# 
+# HDL call sequence:
+# Stopped at C:/Users/X450JB/Desktop/VLSI/VLSI/LSI-Contest/RTL/read_file/read_file.vhd 69 Process line__56
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/X450JB/Desktop/VLSI/VLSI/LSI-Contest/RTL/read_file/read_file.vhd 69 Process line__56
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/X450JB/Desktop/VLSI/VLSI/LSI-Contest/RTL/read_file/read_file.vhd 69 Process line__56
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/X450JB/Desktop/VLSI/VLSI/LSI-Contest/RTL/read_file/read_file.vhd 69 Process line__56
+# 
+run -all
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/X450JB/Desktop/VLSI/VLSI/LSI-Contest/RTL/read_file/read_file.vhd 69 Process line__56
+# 
+# Compile of read_file.vhd was successful.
+vsim -voptargs=+acc work.read_file
+# vsim -voptargs=+acc work.read_file 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.read_file(behavioral)
+add wave \
+{sim:/read_file/valid } \
+{sim:/read_file/sim_file } \
+{sim:/read_file/eof } \
+{sim:/read_file/enable } \
+{sim:/read_file/data_width_bytes } \
+{sim:/read_file/data_width } \
+{sim:/read_file/data } \
+{sim:/read_file/clk } 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: X450JB  Hostname: CHRIS-PC  ProcessID: 1252
+#           Attempting to use alternate WLF file "./wlftwqdr6w".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftwqdr6w
+force -freeze sim:/read_file/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/read_file/enable 1 0
+run
+# ** Fatal: (vsim-3471) Slice range (23 downto 0) does not belong to the prefix index range (15 downto 0).
+#    Time: 100 ps  Iteration: 0  Process: /read_file/line__56 File: C:/Users/X450JB/Desktop/VLSI/VLSI/LSI-Contest/RTL/read_file/read_file.vhd
+# Fatal error in Process line__56 at C:/Users/X450JB/Desktop/VLSI/VLSI/LSI-Contest/RTL/read_file/read_file.vhd line 69
+# 
+# HDL call sequence:
+# Stopped at C:/Users/X450JB/Desktop/VLSI/VLSI/LSI-Contest/RTL/read_file/read_file.vhd 69 Process line__56
+# 
+# Compile of read_file.vhd was successful.
+vsim -voptargs=+acc work.read_file
+# vsim -voptargs=+acc work.read_file 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.read_file(behavioral)
+add wave \
+{sim:/read_file/valid } \
+{sim:/read_file/sim_file } \
+{sim:/read_file/eof } \
+{sim:/read_file/enable } \
+{sim:/read_file/data_width_bytes } \
+{sim:/read_file/data_width } \
+{sim:/read_file/data } \
+{sim:/read_file/clk } 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: X450JB  Hostname: CHRIS-PC  ProcessID: 1252
+#           Attempting to use alternate WLF file "./wlftbikb43".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftbikb43
+noforce sim:/read_file/clk
+force -freeze sim:/read_file/data 1 0, 0 {50 ps} -r 100
+# Value length (1) does not equal array index length (24).
+# 
+# ** Error: (vsim-4011) Invalid force value: 1 0, 0 {50 ps}.
+# 
+noforce sim:/read_file/clk
+force -freeze sim:/read_file/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/read_file/enable 1 0
+run
+# ** Error: (vsim-3859) HREAD Error: Failed to read the STRING
+#    Time: 100 ps  Iteration: 0  Instance: /read_file
+run
+# ** Error: (vsim-3859) HREAD Error: Failed to read the STRING
+#    Time: 200 ps  Iteration: 0  Instance: /read_file
+run
+# ** Error: (vsim-3859) HREAD Error: Failed to read the STRING
+#    Time: 300 ps  Iteration: 0  Instance: /read_file
+run
+# ** Error: (vsim-3859) HREAD Error: Failed to read the STRING
+#    Time: 400 ps  Iteration: 0  Instance: /read_file
+run
+# ** Error: (vsim-3859) HREAD Error: Failed to read the STRING
+#    Time: 500 ps  Iteration: 0  Instance: /read_file
+run
+# ** Error: (vsim-3859) HREAD Error: Failed to read the STRING
+#    Time: 600 ps  Iteration: 0  Instance: /read_file
+# WARNING: No extended dataflow License exists
+# Compile of read_file.vhd was successful.
+vsim -voptargs=+acc work.read_file
+# vsim -voptargs=+acc work.read_file 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.read_file(behavioral)
+add wave \
+{sim:/read_file/valid } \
+{sim:/read_file/sim_file } \
+{sim:/read_file/eof } \
+{sim:/read_file/enable } \
+{sim:/read_file/data_width_bytes } \
+{sim:/read_file/data_width } \
+{sim:/read_file/data } \
+{sim:/read_file/clk } 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: X450JB  Hostname: CHRIS-PC  ProcessID: 1252
+#           Attempting to use alternate WLF file "./wlftegkz8q".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftegkz8q
+force -freeze sim:/read_file/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/read_file/enable 1 0
+run
+# ** Error: (vsim-3859) HREAD Error: Failed to read the STRING
+#    Time: 100 ps  Iteration: 0  Instance: /read_file
+run
+# ** Error: (vsim-3859) HREAD Error: Failed to read the STRING
+#    Time: 200 ps  Iteration: 0  Instance: /read_file
+run
+# ** Error: (vsim-3859) HREAD Error: Failed to read the STRING
+#    Time: 300 ps  Iteration: 0  Instance: /read_file
+run
+# ** Error: (vsim-3859) HREAD Error: Failed to read the STRING
+#    Time: 400 ps  Iteration: 0  Instance: /read_file
+# Compile of read_file.vhd was successful.
+vsim -voptargs=+acc work.read_file
+# vsim -voptargs=+acc work.read_file 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.read_file(behavioral)
+add wave \
+{sim:/read_file/valid } \
+{sim:/read_file/sim_file } \
+{sim:/read_file/eof } \
+{sim:/read_file/enable } \
+{sim:/read_file/data_width_bytes } \
+{sim:/read_file/data_width } \
+{sim:/read_file/data } \
+{sim:/read_file/clk } 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: X450JB  Hostname: CHRIS-PC  ProcessID: 1252
+#           Attempting to use alternate WLF file "./wlft3vqc2t".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft3vqc2t
+add wave \
+{sim:/read_file/valid } \
+{sim:/read_file/sim_file } \
+{sim:/read_file/eof } \
+{sim:/read_file/enable } \
+{sim:/read_file/data_width_bytes } \
+{sim:/read_file/data_width } \
+{sim:/read_file/data } \
+{sim:/read_file/clk } 
+force -freeze sim:/read_file/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/read_file/enable 1 0
+run
+# ** Error: (vsim-3859) HREAD Error: Failed to read the STRING
+#    Time: 100 ps  Iteration: 0  Instance: /read_file
+run
+# ** Error: (vsim-3859) HREAD Error: Failed to read the STRING
+#    Time: 200 ps  Iteration: 0  Instance: /read_file
+run
+# ** Error: (vsim-3859) HREAD Error: Failed to read the STRING
+#    Time: 300 ps  Iteration: 0  Instance: /read_file
+# Compile of read_file.vhd was successful.
+vsim -voptargs=+acc work.read_file
+# vsim -voptargs=+acc work.read_file 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.read_file(behavioral)
+add wave \
+{sim:/read_file/valid } \
+{sim:/read_file/sim_file } \
+{sim:/read_file/eof } \
+{sim:/read_file/enable } \
+{sim:/read_file/data_width_bytes } \
+{sim:/read_file/data_width } \
+{sim:/read_file/data } \
+{sim:/read_file/clk } 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: X450JB  Hostname: CHRIS-PC  ProcessID: 1252
+#           Attempting to use alternate WLF file "./wlftcff02j".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftcff02j
+force -freeze sim:/read_file/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/read_file/enable U 0
+force -freeze sim:/read_file/enable 1 0
+run
+run
+run
+# Compile of read_file.vhd was successful.
+vsim -voptargs=+acc work.read_file
+# vsim -voptargs=+acc work.read_file 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.read_file(behavioral)
+add wave \
+{sim:/read_file/valid } \
+{sim:/read_file/sim_file } \
+{sim:/read_file/eof } \
+{sim:/read_file/enable } \
+{sim:/read_file/data_width_bytes } \
+{sim:/read_file/data_width } \
+{sim:/read_file/data } \
+{sim:/read_file/clk } 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: X450JB  Hostname: CHRIS-PC  ProcessID: 1252
+#           Attempting to use alternate WLF file "./wlfttae8sx".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfttae8sx
+force -freeze sim:/read_file/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/read_file/enable 1 0
+run
+# ** Error: (vsim-3859) HREAD Error: Failed to read the STRING
+#    Time: 100 ps  Iteration: 0  Instance: /read_file
+run
+# ** Error: (vsim-3859) HREAD Error: Failed to read the STRING
+#    Time: 200 ps  Iteration: 0  Instance: /read_file
+run
+# ** Error: (vsim-3859) HREAD Error: Failed to read the STRING
+#    Time: 300 ps  Iteration: 0  Instance: /read_file
+# Compile of read_file.vhd was successful.
+run
+# ** Error: (vsim-3859) HREAD Error: Failed to read the STRING
+#    Time: 400 ps  Iteration: 0  Instance: /read_file
+vsim -voptargs=+acc work.read_file
+# vsim -voptargs=+acc work.read_file 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.read_file(behavioral)
+add wave \
+{sim:/read_file/valid } \
+{sim:/read_file/sim_file } \
+{sim:/read_file/eof } \
+{sim:/read_file/enable } \
+{sim:/read_file/data_width_bytes } \
+{sim:/read_file/data_width } \
+{sim:/read_file/data } \
+{sim:/read_file/clk } 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: X450JB  Hostname: CHRIS-PC  ProcessID: 1252
+#           Attempting to use alternate WLF file "./wlftyencmv".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftyencmv
+force -freeze sim:/read_file/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/read_file/enable 1 0
+run
+# ** Fatal: (vsim-3471) Slice range (23 downto 0) does not belong to the prefix index range (15 downto 0).
+#    Time: 100 ps  Iteration: 0  Process: /read_file/line__56 File: C:/Users/X450JB/Desktop/VLSI/VLSI/LSI-Contest/RTL/read_file/read_file.vhd
+# Fatal error in Process line__56 at C:/Users/X450JB/Desktop/VLSI/VLSI/LSI-Contest/RTL/read_file/read_file.vhd line 69
+# 
+# HDL call sequence:
+# Stopped at C:/Users/X450JB/Desktop/VLSI/VLSI/LSI-Contest/RTL/read_file/read_file.vhd 69 Process line__56
+# 
+vsim -voptargs=+acc work.read_file
+# vsim -voptargs=+acc work.read_file 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.read_file(behavioral)
+# Compile of read_file.vhd was successful.
+vsim -voptargs=+acc work.read_file
+# vsim -voptargs=+acc work.read_file 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.read_file(behavioral)
+add wave \
+{sim:/read_file/valid } \
+{sim:/read_file/sim_file } \
+{sim:/read_file/eof } \
+{sim:/read_file/enable } \
+{sim:/read_file/data_width_bytes } \
+{sim:/read_file/data_width } \
+{sim:/read_file/data } \
+{sim:/read_file/clk } 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: X450JB  Hostname: CHRIS-PC  ProcessID: 1252
+#           Attempting to use alternate WLF file "./wlft7mwvbb".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft7mwvbb
+noforce sim:/read_file/clk
+force -freeze sim:/read_file/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/read_file/enable 1 0
+run
+run
+run
+run
+run
+run
+# Compile of read_file.vhd was successful.
+vsim -voptargs=+acc work.read_file
+# vsim -voptargs=+acc work.read_file 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.read_file(behavioral)
+add wave sim:/read_file/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: X450JB  Hostname: CHRIS-PC  ProcessID: 1252
+#           Attempting to use alternate WLF file "./wlft3n3hqj".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft3n3hqj
+add wave \
+{sim:/read_file/valid } \
+{sim:/read_file/sim_file } \
+{sim:/read_file/eof } \
+{sim:/read_file/enable } \
+{sim:/read_file/data_width_bytes } \
+{sim:/read_file/data_width } \
+{sim:/read_file/data } \
+{sim:/read_file/clk } 
+add wave \
+{sim:/read_file/valid } \
+{sim:/read_file/sim_file } \
+{sim:/read_file/eof } \
+{sim:/read_file/enable } \
+{sim:/read_file/data_width_bytes } \
+{sim:/read_file/data_width } \
+{sim:/read_file/data } \
+{sim:/read_file/clk } 
+force -freeze sim:/read_file/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/read_file/enable 1 0
+run
+# ** Fatal: (vsim-3471) Slice range (23 downto 0) does not belong to the prefix index range (15 downto 0).
+#    Time: 100 ps  Iteration: 0  Process: /read_file/line__56 File: C:/Users/X450JB/Desktop/VLSI/VLSI/LSI-Contest/RTL/read_file/read_file.vhd
+# Fatal error in Process line__56 at C:/Users/X450JB/Desktop/VLSI/VLSI/LSI-Contest/RTL/read_file/read_file.vhd line 69
+# 
+# HDL call sequence:
+# Stopped at C:/Users/X450JB/Desktop/VLSI/VLSI/LSI-Contest/RTL/read_file/read_file.vhd 69 Process line__56
+# 
+# Compile of read_file.vhd was successful.
+vsim -voptargs=+acc work.read_file
+# vsim -voptargs=+acc work.read_file 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.read_file(behavioral)
+add wave \
+{sim:/read_file/valid } \
+{sim:/read_file/sim_file } \
+{sim:/read_file/eof } \
+{sim:/read_file/enable } \
+{sim:/read_file/data_width_bytes } \
+{sim:/read_file/data_width } \
+{sim:/read_file/data } \
+{sim:/read_file/clk } 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: X450JB  Hostname: CHRIS-PC  ProcessID: 1252
+#           Attempting to use alternate WLF file "./wlftwzkxa6".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftwzkxa6
+force -freeze sim:/read_file/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/read_file/enable 1 0
+run
+run
+run
+run
+change sim:/read_file/data_width 24
+# ** Warning: (vsim-3933) '/read_file/data_width' is considered a constant, changing its value may have no effect.
+# 
+run
+run
+run
+run
+# Compile of read_file.vhd was successful.
+vsim -voptargs=+acc work.read_file
+# vsim -voptargs=+acc work.read_file 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.read_file(behavioral)
+add wave \
+{sim:/read_file/valid } \
+{sim:/read_file/sim_file } \
+{sim:/read_file/eof } \
+{sim:/read_file/enable } \
+{sim:/read_file/data_width_bytes } \
+{sim:/read_file/data_width } \
+{sim:/read_file/data } \
+{sim:/read_file/clk } 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: X450JB  Hostname: CHRIS-PC  ProcessID: 1252
+#           Attempting to use alternate WLF file "./wlftwxg7mn".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftwxg7mn
+force -freeze sim:/read_file/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/read_file/enable 1 0
+run
+run
+run

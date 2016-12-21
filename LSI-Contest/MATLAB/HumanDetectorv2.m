@@ -8,7 +8,7 @@ load SVMModelRetrain_16_06_08_BC_0_010.mat
 load Hi_Hi_inv_16_09_13_scale_1.25.mat  % scale = 1.25
 
 % Read input image
-imageName = 'test_pos_1.png';
+imageName = 'test_pos_3.png';
 img = imread(imageName);
 [ rows, cols, z ] = size(img);
 

@@ -29,7 +29,7 @@ entity read_file is
     generic
     (
         sim_file            :   string := "test_pos_3.raw";
-        DATA_WIDTH          :   integer := 24;
+        DATA_WIDTH          :   integer := 12;
         DATA_WIDTH_BYTES    :   integer := 3
     );
     port

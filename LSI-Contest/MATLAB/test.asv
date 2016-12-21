@@ -1,0 +1,15 @@
+imageName = 'test_pos_1.png';
+img = imread(imageName);
+%img1 = greyscale(img);
+%imwrite(img1);
+%img_to_vhdl_txt(img,'test_pos_1.raw');
+
+img_red = img(:,:,1)*65536;
+img_green = img(:,:,2)*256;
+img_blue = img(:,:,3);
+img_matx = (img_red+img_green+img_blue)';
+
+    % Columnize the image and convert each pixel to a 4 digit hex string
+hex_stream = cellstr(num2str(img_matx(:),'%08x'));
+    % write out file using new line as the delimter
+dlmwrite('test_pos_1.raw', hex_stream, '-append', 'delimiter', '', 'newline', 'pc');

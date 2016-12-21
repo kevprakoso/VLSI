@@ -1,0 +1,16 @@
+% Convert an image to a VHDL compatible input file
+function img_to_vhdl_txt(img,filename)
+    % Invert image.
+    img_red = (img(:,:,1))';
+    img_green = (img(:,:,2))';
+    img_blue = (img(:,:,3))';
+    
+ 
+    strcat
+    % Columnize the image and convert each pixel to a 4 digit hex string
+    hex_stream_red = cellstr(num2str(img_red(:),'%04x'));
+    hex_stream_green = cellstr(num2str(img_green(:),'%04x'));
+    hex_stream_blue = cellstr(num2str(img_blue(:),'%04x'));
+    % write out file using new line as the delimter
+    dlmwrite(filename, hex_stream, '-append', 'delimiter', '', 'newline', 'pc');
+end

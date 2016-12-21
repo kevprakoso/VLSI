@@ -1,7 +1,6 @@
 # Reading E:/Software/altera/91/modelsim_ase/tcl/vsim/pref.tcl 
-# OpenFile C:/Users/X450JB/Desktop/VLSI/En_human_detection/imgmodelsim/work/imgproc.mpf 
+# OpenFile C:/Users/X450JB/Desktop/VLSI/VLSI/LSI-Contest/RTL/read_file/imgproc.mpf 
 # Loading project imgproc
-# Compile of test.vhd was successful.
 vsim -gui work.read_file
 # vsim -gui work.read_file 
 # Loading std.standard
@@ -22,15 +21,7 @@ add wave \
 {sim:/read_file/clk } 
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: X450JB  Hostname: CHRIS-PC  ProcessID: 1252
-#           Attempting to use alternate WLF file "./wlft6t1m51".
+#           Attempting to use alternate WLF file "./wlftjmb1mq".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft6t1m51
+#           Using alternate file: ./wlftjmb1mq
 force -freeze sim:/read_file/clk 1 0, 0 {50 ps} -r 100
-force -freeze sim:/read_file/enable 1 0
-run
-run
-run
-run -all
-# Break key hit 
-# Break in Process line__56 at C:/Users/X450JB/Desktop/VLSI/En_human_detection/imgmodelsim/work/test.vhd line 56
-# Compile of read_file.vhd was successful.

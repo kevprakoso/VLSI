@@ -1,27 +1,34 @@
 # Reading E:/Software/altera/91/modelsim_ase/tcl/vsim/pref.tcl 
 # OpenFile C:/Users/X450JB/Desktop/VLSI/VLSI/LSI-Contest/RTL/read_file/imgproc.mpf 
 # Loading project imgproc
-vsim -gui work.read_file
-# vsim -gui work.read_file 
-# Loading std.standard
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading std.textio(body)
-# Loading ieee.std_logic_textio(body)
-# Loading work.read_file(behavioral)
+# Compile of calculate.v was successful.
+# 1 compiles, 1 failed with no errors. 
+# Compile of calculate.v was successful.
+# Compile of read_file.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim -gui work.calculateScaleStep
+# vsim -gui work.calculateScaleStep 
+# Loading work.calculateScaleStep
 # WARNING: No extended dataflow License exists
 add wave \
-{sim:/read_file/valid } \
-{sim:/read_file/sim_file } \
-{sim:/read_file/eof } \
-{sim:/read_file/enable } \
-{sim:/read_file/data_width_bytes } \
-{sim:/read_file/data_width } \
-{sim:/read_file/data } \
-{sim:/read_file/clk } 
+{sim:/calculateScaleStep/step } \
+{sim:/calculateScaleStep/rows } \
+{sim:/calculateScaleStep/min } \
+{sim:/calculateScaleStep/cols } \
+{sim:/calculateScaleStep/b } \
+{sim:/calculateScaleStep/a } 
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: X450JB  Hostname: CHRIS-PC  ProcessID: 1252
-#           Attempting to use alternate WLF file "./wlftjmb1mq".
+#           Attempting to use alternate WLF file "./wlftw2t4vw".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftjmb1mq
-force -freeze sim:/read_file/clk 1 0, 0 {50 ps} -r 100
+#           Using alternate file: ./wlftw2t4vw
+force -freeze sim:/calculateScaleStep/rows 640 0
+# Invalid binary digit: 6.
+# ** Error: (vsim-4011) Invalid force value: 640 0.
+# 
+force -freeze sim:/calculateScaleStep/cols 1010000000 0
+force -freeze sim:/calculateScaleStep/rows 111100000 0
+run
+run
+run
+# Compile of read_file.vhd was successful.

@@ -2,38 +2,56 @@ m255
 K3
 13
 cModel Technology
-Z0 dC:\Users\X450JB\Desktop\VLSI\En_human_detection\imgmodelsim\work
+dC:\Users\X450JB\Desktop\VLSI\En_human_detection\imgmodelsim\work
+vcalculateScaleStep
+I@S9Ol:gZ2nPf6mfLJVgl`1
+VH4XQbLeUVoK@6?ZIz107C2
+Z0 dC:\Users\X450JB\Desktop\VLSI\VLSI\LSI-Contest\RTL\read_file
+w1482313002
+8C:/Users/X450JB/Desktop/VLSI/VLSI/LSI-Contest/RTL/calculate.v
+FC:/Users/X450JB/Desktop/VLSI/VLSI/LSI-Contest/RTL/calculate.v
+L0 5
+OV;L;6.5b;42
+r1
+31
+o-work work -nocovercells -O0
+ncalculate@scale@step
+!s100 8WkEY95@^]5o9oHZVedE80
+!s85 0
+!s101 -O0
+!s102 -nocovercells
 Eread_file
 Z1 w1482302459
 Z2 DPx3 std 6 textio 0 22 m2KQDRRhmF833<<DjYdL70
 Z3 DPx4 ieee 16 std_logic_textio 0 22 8YS?iX`WD1REQG`ZRYQGB2
 Z4 DPx4 ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
 Z5 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
-Z6 8C:/Users/X450JB/Desktop/VLSI/En_human_detection/imgmodelsim/work/read_file.vhd
-Z7 FC:/Users/X450JB/Desktop/VLSI/En_human_detection/imgmodelsim/work/read_file.vhd
+Z6 dC:\Users\X450JB\Desktop\VLSI\VLSI\LSI-Contest\RTL\read_file
+Z7 8C:/Users/X450JB/Desktop/VLSI/VLSI/LSI-Contest/RTL/read_file/read_file.vhd
+Z8 FC:/Users/X450JB/Desktop/VLSI/VLSI/LSI-Contest/RTL/read_file/read_file.vhd
 l0
 L28
 VDYEmZUAe82Hz4jmI_5TVc3
 !s100 aVjKEP]D3a`nGQEdmG2Oa0
-Z8 OV;C;6.5b;42
+Z9 OV;C;6.5b;42
 32
-Z9 o-work work -2002 -explicit -O0
-Z10 tExplicit 1
+Z10 o-work work -2002 -explicit -O0
+Z11 tExplicit 1
 Abehavioral
 R2
 R3
 R4
 R5
-Z11 DEx4 work 9 read_file 0 22 DYEmZUAe82Hz4jmI_5TVc3
+Z12 DEx4 work 9 read_file 0 22 DYEmZUAe82Hz4jmI_5TVc3
 l53
 L46
-Z12 V@U5m=Cd7dO[kYKecn4jZJ0
-Z13 !s100 ]dzz`F]QUdmbTHNY0YD2;3
-R8
-32
-Z14 Mx4 4 ieee 14 std_logic_1164
-Z15 Mx3 4 ieee 11 numeric_std
-Z16 Mx2 4 ieee 16 std_logic_textio
-Z17 Mx1 3 std 6 textio
+Z13 V@U5m=Cd7dO[kYKecn4jZJ0
+Z14 !s100 ]dzz`F]QUdmbTHNY0YD2;3
 R9
+32
+Z15 Mx4 4 ieee 14 std_logic_1164
+Z16 Mx3 4 ieee 11 numeric_std
+Z17 Mx2 4 ieee 16 std_logic_textio
+Z18 Mx1 3 std 6 textio
 R10
+R11

@@ -15,8 +15,6 @@ output reg [10:0] magnitude
 
 wire [10:0] mag;
 wire [9:0] sqra, sqrb, sqrc, sqrd, sqre, sqrf, sqrg, sqrh, sqri;
-wire [4:0] square;
-wire [2:0] div;
 
 sqr sqra(
 .clk(clk),
@@ -84,13 +82,6 @@ root_norm root(
 .sqrh(sqrh),
 .sqri(sqri),
 .magnitude(mag)
-);
-
-det determine(
-.clk(clk),
-.val(mag),
-.square(square),
-.div(div)
 );
 
 always@ (posedge clk)

@@ -56,8 +56,12 @@ function H = getHOGv2(img, mask)
             hist3 = getHistogramv2(dxBlock3,dyBlock3, mask(9:16, 1:8));  %  9 x 1
             hist4 = getHistogramv2(dxBlock4,dyBlock4, mask(9:16, 9:16));  %  9 x 1
             blockHists = [hist1; hist2; hist3; hist4];                  % 36 x 1
-            normalized = normalization(blockHists);                        % 36 x 1
+            magnitude = norm(blockHists(:)) + 0.00000001;
+            normalized = blockHists / magnitude;
+            % 36 x 1
+            normalized1 = normalization(blockHists);
             H = [H; normalized(:)];
+            
         end
     end
     

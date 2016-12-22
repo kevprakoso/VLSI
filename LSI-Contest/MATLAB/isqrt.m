@@ -1,12 +1,12 @@
 function M = isqrt(dx, dy ) 
     
-    m = dx^2 + dy^2;
+    num = dx^2 + dy^2;
     res = 0;
     a = 1;
     bit = bitshift(a,14); % The second-to-top bit is set: 1 << 30 for 32 bits
  
     % "bit" starts at the highest power of four <= the argument.
-    while (bit > m)
+    while (bit > num)
         bit = bitshift(bit, -2);
     end
     while (bit ~= 0) 

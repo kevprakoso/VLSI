@@ -13,9 +13,9 @@ function norms = normalization(Hist)
 	e   = 2^n;
 	a	= 2^(n-1);
 
-	b1 = a + 1*(e-a)/4;
-	b2 = a + 2*(e-a)/4;
-	b3 = a + 3*(e-a)/4;
+	b1 = a + 1*(a)/4;
+	b2 = a + 2*(a)/4;
+	b3 = a + 3*(a)/4;
 
 	if sums > a && sums <= b1
 		v= b1;

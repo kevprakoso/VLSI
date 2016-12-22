@@ -1,1 +1,0 @@
-Ini punya gua

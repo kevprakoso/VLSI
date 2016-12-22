@@ -51,10 +51,10 @@ function H = getHOGv2(img, mask)
             dyBlock3 = dyBlock(9:16, 1:8 );   % 8 x 8
             dyBlock4 = dyBlock(9:16, 9:16);   % 8 x 8
             
-            hist1 = getHistogram(dxBlock1(:),dyBlock1(:), numBins,mask);  %  9 x 1
-            hist2 = getHistogram(dxBlock2(:),dyBlock2(:), numBins,mask);  %  9 x 1
-            hist3 = getHistogram(dxBlock3(:),dyBlock3(:), numBins,mask);  %  9 x 1
-            hist4 = getHistogram(dxBlock4(:),dyBlock4(:), numBins,mask);  %  9 x 1
+            hist1 = getHistogramv2(dxBlock1(:),dyBlock1(:), numBins,mask);  %  9 x 1
+            hist2 = getHistogramv2(dxBlock2(:),dyBlock2(:), numBins,mask);  %  9 x 1
+            hist3 = getHistogramv2(dxBlock3(:),dyBlock3(:), numBins,mask);  %  9 x 1
+            hist4 = getHistogramv2(dxBlock4(:),dyBlock4(:), numBins,mask);  %  9 x 1
             blockHists = [hist1; hist2; hist3; hist4];                  % 36 x 1
             magnitude = norm(blockHists(:)) + 0.00000001;
             normalized = blockHists / magnitude;                        % 36 x 1

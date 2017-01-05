@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="myfirst_niosii">
+		<CBX_INST_ENTRY INSTANCE_NAME="|myfirst_niosii|DE2_115_SOPC:DE2_115_SOPC_inst|DE2_115_SOPC_cpu:cpu|DE2_115_SOPC_cpu_ic_data_module:DE2_115_SOPC_cpu_ic_data|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_cjd1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|myfirst_niosii|DE2_115_SOPC:DE2_115_SOPC_inst|DE2_115_SOPC_cpu:cpu|DE2_115_SOPC_cpu_nios2_oci:the_DE2_115_SOPC_cpu_nios2_oci|DE2_115_SOPC_cpu_nios2_ocimem:the_DE2_115_SOPC_cpu_nios2_ocimem|DE2_115_SOPC_cpu_ociram_sp_ram_module:DE2_115_SOPC_cpu_ociram_sp_ram|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_ar71.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|myfirst_niosii|DE2_115_SOPC:DE2_115_SOPC_inst|DE2_115_SOPC_cpu:cpu|DE2_115_SOPC_cpu_register_bank_b_module:DE2_115_SOPC_cpu_register_bank_b|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_gag1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|myfirst_niosii|DE2_115_SOPC:DE2_115_SOPC_inst|DE2_115_SOPC_cpu:cpu|DE2_115_SOPC_cpu_mult_cell:the_DE2_115_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_1|altera_mult_add_q1u2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_multiplier_function:multiplier_block|lpm_mult:Mult0" CBX_FILE_NAME="mult_jp01.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|myfirst_niosii|DE2_115_SOPC:DE2_115_SOPC_inst|DE2_115_SOPC_cpu:cpu|lpm_add_sub:Add18" CBX_FILE_NAME="add_sub_qvi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|myfirst_niosii|DE2_115_SOPC:DE2_115_SOPC_inst|DE2_115_SOPC_cpu:cpu|DE2_115_SOPC_cpu_bht_module:DE2_115_SOPC_cpu_bht|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_fsg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|myfirst_niosii|DE2_115_SOPC:DE2_115_SOPC_inst|DE2_115_SOPC_cpu:cpu|DE2_115_SOPC_cpu_dc_data_module:DE2_115_SOPC_cpu_dc_data|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_kdf1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|myfirst_niosii|DE2_115_SOPC:DE2_115_SOPC_inst|DE2_115_SOPC_cpu:cpu|DE2_115_SOPC_cpu_dc_tag_module:DE2_115_SOPC_cpu_dc_tag|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_vgg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|myfirst_niosii|DE2_115_SOPC:DE2_115_SOPC_inst|DE2_115_SOPC_cpu:cpu|DE2_115_SOPC_cpu_dc_victim_module:DE2_115_SOPC_cpu_dc_victim|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_r3d1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|myfirst_niosii|DE2_115_SOPC:DE2_115_SOPC_inst|DE2_115_SOPC_cpu:cpu|DE2_115_SOPC_cpu_mult_cell:the_DE2_115_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_1" CBX_FILE_NAME="altera_mult_add_q1u2.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|myfirst_niosii|DE2_115_SOPC:DE2_115_SOPC_inst|DE2_115_SOPC_cpu:cpu|DE2_115_SOPC_cpu_register_bank_a_module:DE2_115_SOPC_cpu_register_bank_a|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_fag1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|myfirst_niosii|DE2_115_SOPC:DE2_115_SOPC_inst|DE2_115_SOPC_jtag_uart:jtag_uart|DE2_115_SOPC_jtag_uart_scfifo_w:the_DE2_115_SOPC_jtag_uart_scfifo_w|scfifo:wfifo" CBX_FILE_NAME="scfifo_jr21.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|myfirst_niosii|DE2_115_SOPC:DE2_115_SOPC_inst|DE2_115_SOPC_cpu:cpu|DE2_115_SOPC_cpu_mult_cell:the_DE2_115_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_2" CBX_FILE_NAME="altera_mult_add_s1u2.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|myfirst_niosii|DE2_115_SOPC:DE2_115_SOPC_inst|DE2_115_SOPC_jtag_uart:jtag_uart|DE2_115_SOPC_jtag_uart_scfifo_r:the_DE2_115_SOPC_jtag_uart_scfifo_r|scfifo:rfifo" CBX_FILE_NAME="scfifo_jr21.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|myfirst_niosii|DE2_115_SOPC:DE2_115_SOPC_inst|DE2_115_SOPC_onchip_memory2:onchip_memory2|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_u9d1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|myfirst_niosii|DE2_115_SOPC:DE2_115_SOPC_inst|DE2_115_SOPC_cpu:cpu|DE2_115_SOPC_cpu_ic_tag_module:DE2_115_SOPC_cpu_ic_tag|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_s8h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|myfirst_niosii|DE2_115_SOPC:DE2_115_SOPC_inst|DE2_115_SOPC_cpu:cpu|DE2_115_SOPC_cpu_mult_cell:the_DE2_115_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_2|altera_mult_add_s1u2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_multiplier_function:multiplier_block|lpm_mult:Mult0" CBX_FILE_NAME="mult_j011.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

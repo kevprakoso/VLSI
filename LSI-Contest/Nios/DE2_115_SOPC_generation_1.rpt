@@ -1,0 +1,81 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory="C:/Users/Kevin Shidqi Prakoso/Documents/VLSI/LSI-Contest/Nios/" --output-directory="C:/Users/Kevin Shidqi Prakoso/Documents/VLSI/LSI-Contest/Nios/DE2_115_SOPC/" --report-file="bsf:C:/Users/Kevin Shidqi Prakoso/Documents/VLSI/LSI-Contest/Nios/DE2_115_SOPC.bsf" --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file="C:/Users/Kevin Shidqi Prakoso/Documents/VLSI/LSI-Contest/Nios/DE2_115_SOPC.qsys"
+Progress: Loading Nios/DE2_115_SOPC.qsys
+Progress: Reading input file
+Progress: Adding clk_50 [clock_source 13.0]
+Progress: Parameterizing module clk_50
+Progress: Adding cpu [altera_nios2_qsys 13.0]
+Progress: Parameterizing module cpu
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart
+Progress: Adding onchip_memory2 [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module onchip_memory2
+Progress: Adding pio_led [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module pio_led
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: DE2_115_SOPC.jtag_uart: jtag_uart.avalon_jtag_slave must be connected to an Avalon-MM master
+Warning: DE2_115_SOPC.jtag_uart: Interrupt sender jtag_uart.irq is not connected to an interrupt receiver
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory="C:/Users/Kevin Shidqi Prakoso/Documents/VLSI/LSI-Contest/Nios/" --output-directory="C:/Users/Kevin Shidqi Prakoso/Documents/VLSI/LSI-Contest/Nios/DE2_115_SOPC/synthesis/" --file-set=QUARTUS_SYNTH --report-file="sopcinfo:C:/Users/Kevin Shidqi Prakoso/Documents/VLSI/LSI-Contest/Nios/DE2_115_SOPC.sopcinfo" --report-file="html:C:/Users/Kevin Shidqi Prakoso/Documents/VLSI/LSI-Contest/Nios/DE2_115_SOPC.html" --report-file="qip:C:/Users/Kevin Shidqi Prakoso/Documents/VLSI/LSI-Contest/Nios/DE2_115_SOPC/synthesis/DE2_115_SOPC.qip" --report-file="cmp:C:/Users/Kevin Shidqi Prakoso/Documents/VLSI/LSI-Contest/Nios/DE2_115_SOPC.cmp" --report-file=svd --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file="C:/Users/Kevin Shidqi Prakoso/Documents/VLSI/LSI-Contest/Nios/DE2_115_SOPC.qsys" --language=VERILOG
+Progress: Loading Nios/DE2_115_SOPC.qsys
+Progress: Reading input file
+Progress: Adding clk_50 [clock_source 13.0]
+Progress: Parameterizing module clk_50
+Progress: Adding cpu [altera_nios2_qsys 13.0]
+Progress: Parameterizing module cpu
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart
+Progress: Adding onchip_memory2 [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module onchip_memory2
+Progress: Adding pio_led [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module pio_led
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: DE2_115_SOPC.jtag_uart: jtag_uart.avalon_jtag_slave must be connected to an Avalon-MM master
+Warning: DE2_115_SOPC.jtag_uart: Interrupt sender jtag_uart.irq is not connected to an interrupt receiver
+Info: DE2_115_SOPC: Generating DE2_115_SOPC "DE2_115_SOPC" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 5 modules, 13 connections
+Info: No custom instruction connections, skipping transform 
+Error: cpu_data_master_translator.avalon_anti_master_0: Cannot connect cpu_data_master_translator.reset because cpu.reset_n is not connected 
+Error: cpu_instruction_master_translator.avalon_anti_master_0: Cannot connect cpu_instruction_master_translator.reset because cpu.reset_n is not connected 
+Error: cpu_jtag_debug_module_translator.avalon_anti_slave_0: Cannot connect cpu_jtag_debug_module_translator.reset because cpu.reset_n is not connected 
+Info: merlin_translator_transform: After transform: 10 modules, 25 connections
+Info: merlin_domain_transform: After transform: 19 modules, 63 connections
+Error: addr_router.sink: Cannot connect addr_router.clk_reset because cpu_data_master_translator_avalon_universal_master_0_agent.clk_reset is not connected 
+Error: addr_router_001.sink: Cannot connect addr_router_001.clk_reset because cpu_instruction_master_translator_avalon_universal_master_0_agent.clk_reset is not connected 
+Error: id_router_001.sink: Cannot connect id_router_001.clk_reset because cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent.clk_reset is not connected 
+Info: merlin_router_transform: After transform: 24 modules, 75 connections
+Error: limiter.cmd_sink: Cannot connect limiter.clk_reset because addr_router.clk_reset is not connected 
+Error: limiter_001.cmd_sink: Cannot connect limiter_001.clk_reset because addr_router_001.clk_reset is not connected 
+Info: merlin_traffic_limiter_transform: After transform: 26 modules, 81 connections
+Info: reset_adaptation_transform: After transform: 27 modules, 83 connections
+Info: merlin_network_to_switch_transform: After transform: 36 modules, 100 connections
+Info: limiter_update_transform: After transform: 36 modules, 102 connections
+Info: merlin_mm_transform: After transform: 36 modules, 102 connections
+Info: merlin_interrupt_mapper_transform: After transform: 37 modules, 104 connections
+Warning: DE2_115_SOPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_115_SOPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_115_SOPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_115_SOPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_115_SOPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_115_SOPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_115_SOPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_115_SOPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_115_SOPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_115_SOPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_115_SOPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_115_SOPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_115_SOPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE2_115_SOPC: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Error: Generation stopped, 35 or more modules remaining
+Info: DE2_115_SOPC: Done DE2_115_SOPC" with 24 modules, 1 files, 173319 bytes
+Error: ip-generate failed with exit code 1: 9 Errors, 16 Warnings
+Info: Finished: Create HDL design files for synthesis

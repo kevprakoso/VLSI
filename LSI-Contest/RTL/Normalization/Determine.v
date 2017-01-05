@@ -12,7 +12,7 @@ reg array[SIZE-1:0];
 integer i;
 always @(array); 
     begin
-	array =  val
+	array =  val;
        i=SIZE;
        while (i>0 && !array[i]) i=i-1;
 	square = i;

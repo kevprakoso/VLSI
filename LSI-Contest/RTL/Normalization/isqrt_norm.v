@@ -18,55 +18,55 @@ wire [9:0] sqra, sqrb, sqrc, sqrd, sqre, sqrf, sqrg, sqrh, sqri;
 wire [4:0] square;
 wire [2:0] div;
 
-sqr sqra(
+sqr sqr1(
 .clk(clk),
 .val(da),
 .square(sqra)
 );
 
-sqr sqrb(
+sqr sqr2(
 .clk(clk),
 .val(db),
 .square(sqrb)
 );
 
-sqr sqrc(
+sqr sqr3(
 .clk(clk),
 .val(dc),
 .square(sqrc)
 );
 
-sqr sqrd(
+sqr sqr4(
 .clk(clk),
 .val(dd),
 .square(sqrd)
 );
 
-sqr sqre(
+sqr sqr5(
 .clk(clk),
 .val(de),
 .square(sqre)
 );
 
-sqr sqrf(
+sqr sqr6(
 .clk(clk),
 .val(df),
 .square(sqrf)
 );
 
-sqr sqrg(
+sqr sqr7(
 .clk(clk),
 .val(dg),
 .square(sqrg)
 );
 
-sqr sqrh(
+sqr sqr8(
 .clk(clk),
 .val(dh),
 .square(sqrh)
 );
 
-sqr sqri(
+sqr sqr9(
 .clk(clk),
 .val(di),
 .square(sqri)

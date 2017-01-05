@@ -1,16 +1,16 @@
 module array8 (
-	input 			clk ,
-	input 			reset,
-	input 			en,
-	input 			wr_en,
-	input  [7:0] 	wr_data,
-	input  [2:0]	wr_idx,
-	input 			rd_en,
-	input  [2:0]	rd_idx,
-	output reg [7:0]	rd_data
+	input 				clk ,
+	input 				reset,
+	input 				en,
+	input 				wr_en,
+	input  [15:0] 		wr_data,
+	input  [2:0]		wr_idx,
+	input 				rd_en,
+	input  [2:0]		rd_idx,
+	output reg [15:0]	rd_data
 );
 
-	reg [7:0] buffer [0:7];
+	reg [15:0] buffer [0:7];
 	reg 	  state;	
 	reg	 	  i;
 

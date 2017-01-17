@@ -8,26 +8,26 @@ output reg [9:0] valout
 
 
 parameter SIZE = 10;
-reg array[SIZE-1:0];
+reg [7:0] array [0 : SIZE - 1];
 integer i;
 reg[4:0] temp;
-always @(array)
+
+always @(posedge clk)
     begin
-<<<<<<< HEAD
-	array =  val;
-       i=SIZE;
-       while (i>0 && !array[i]) i=i-1;
-	square = i;
-=======
-	 array[i] =  val;
+// <<<<<<< HEAD
+     i=SIZE;
+     while (i>0 && !array[i]) 
+       i = i - 1;
+	     square = i;
+	     array[i] =  val;
        i = SIZE;
        while (i>0 && !array[i]) 
-		 begin
-			i = i-1;
-			square <= i;
-		 end
+		   begin
+			   i = i-1;
+			   square <= i;
+		   end
 		 
->>>>>>> 19b7839044ae775fdbebce016009648f6e5899c3
+// >>>>>>> 19b7839044ae775fdbebce016009648f6e5899c3
     end
 	 
 always @*

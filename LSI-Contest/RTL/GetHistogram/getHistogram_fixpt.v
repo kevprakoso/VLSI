@@ -5333,5 +5333,3 @@ module getHistogram_fixpt
   assign ce_out = enb_1_64_1;
 
 endmodule  // getHistogram_fixpt
-
-

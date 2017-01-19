@@ -1,1 +1,1 @@
-File Modul Gethistogram
+File Module Gethistogram

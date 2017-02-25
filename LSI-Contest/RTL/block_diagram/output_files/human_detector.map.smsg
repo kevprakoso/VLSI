@@ -1,0 +1,3 @@
+Warning (10268): Verilog HDL information at sqr.v(33): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at root_sqr.v(13): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at magtan.v(19): always construct contains both blocking and non-blocking assignments

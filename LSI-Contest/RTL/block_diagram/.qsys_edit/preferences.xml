@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable>
+  <columns>
+   <connections preferredWidth="47" />
+   <irq preferredWidth="34" />
+  </columns>
+ </systemtable>
+ <clocktable>
+  <columns>
+   <clockname preferredWidth="323" />
+   <clocksource preferredWidth="323" />
+   <frequency preferredWidth="303" />
+  </columns>
+ </clocktable>
+ <window width="1382" height="754" x="-8" y="-8" />
+ <library
+   expandedCategories="Project,Library/Interface Protocols/Interlaken,Library/Peripherals/Display,Library/Qsys Interconnect/Tri-State Components,Library/Interface Protocols,Library/Window Bridge,Library/Microcontroller Peripherals,Library/Merlin Components,Library/Verification/Simulation,Library/Qsys Interconnect/Interrupt,Library/Verification/Debug &amp; Performance,Library,Library/Interface Protocols/PCI,Library/Interface Protocols/DisplayPort,Library/Qsys Interconnect/Memory-Mapped,Library/Memories and Memory Controllers,Library/Verification,Library/Peripherals/Debug and Performance,Library/Qsys Interconnect,Library/Interface Protocols/Ethernet,Library/PLL,Library/Qsys Interconnect/AHB,Library/Qsys Interconnect/AXI Interface,Library/Peripherals" />
+</preferences>

@@ -1,0 +1,20 @@
+Fitter Status : Successful - Sat Feb 25 13:51:02 2017
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : human_detector
+Top-level Entity Name : isqrt
+Family : Cyclone IV GX
+Device : EP4CGX150DF27C7
+Timing Models : Final
+Total logic elements : 1,545 / 149,760 ( 1 % )
+    Total combinational functions : 1,525 / 149,760 ( 1 % )
+    Dedicated logic registers : 56 / 149,760 ( < 1 % )
+Total registers : 56
+Total pins : 32 / 426 ( 8 % )
+Total virtual pins : 0
+Total memory bits : 0 / 6,635,520 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 720 ( 0 % )
+Total GXB Receiver Channel PCS : 0 / 8 ( 0 % )
+Total GXB Receiver Channel PMA : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PCS : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PMA : 0 / 8 ( 0 % )
+Total PLLs : 0 / 8 ( 0 % )

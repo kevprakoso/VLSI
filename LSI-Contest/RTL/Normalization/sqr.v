@@ -13,7 +13,7 @@ reg [16:0] temp;
 always@(posedge clk)
 begin
 	mask = 1;
-	factorsum <= val;
+	factorsum = val;
 	sum = 0;
 	
 	while ((val > mask) || (val == mask))
@@ -41,3 +41,4 @@ end
 endmodule
 	
 		
+

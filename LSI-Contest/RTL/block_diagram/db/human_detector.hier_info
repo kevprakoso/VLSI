@@ -1,4 +1,76 @@
-|isqrt
+|magtan
+clk => clk.IN1
+rst => magnitude.OUTPUTSELECT
+rst => magnitude.OUTPUTSELECT
+rst => magnitude.OUTPUTSELECT
+rst => magnitude.OUTPUTSELECT
+rst => magnitude.OUTPUTSELECT
+rst => magnitude.OUTPUTSELECT
+rst => magnitude.OUTPUTSELECT
+rst => magnitude.OUTPUTSELECT
+rst => magnitude.OUTPUTSELECT
+rst => magnitude.OUTPUTSELECT
+rst => magnitude.OUTPUTSELECT
+rst => magnitude.OUTPUTSELECT
+rst => magnitude.OUTPUTSELECT
+rst => magnitude.OUTPUTSELECT
+rst => magnitude.OUTPUTSELECT
+rst => magnitude.OUTPUTSELECT
+dx[0] => dx[0].IN1
+dx[1] => dx[1].IN1
+dx[2] => dx[2].IN1
+dx[3] => dx[3].IN1
+dx[4] => dx[4].IN1
+dx[5] => dx[5].IN1
+dx[6] => dx[6].IN1
+dx[7] => dx[7].IN1
+dx[8] => dx[8].IN1
+dx[9] => dx[9].IN1
+dx[10] => dx[10].IN1
+dx[11] => dx[11].IN1
+dx[12] => dx[12].IN1
+dx[13] => dx[13].IN1
+dx[14] => dx[14].IN1
+dx[15] => dx[15].IN1
+dy[0] => dy[0].IN1
+dy[1] => dy[1].IN1
+dy[2] => dy[2].IN1
+dy[3] => dy[3].IN1
+dy[4] => dy[4].IN1
+dy[5] => dy[5].IN1
+dy[6] => dy[6].IN1
+dy[7] => dy[7].IN1
+dy[8] => dy[8].IN1
+dy[9] => dy[9].IN1
+dy[10] => dy[10].IN1
+dy[11] => dy[11].IN1
+dy[12] => dy[12].IN1
+dy[13] => dy[13].IN1
+dy[14] => dy[14].IN1
+dy[15] => dy[15].IN1
+magnitude[0] <= magnitude[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+magnitude[1] <= magnitude[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+magnitude[2] <= magnitude[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+magnitude[3] <= magnitude[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+magnitude[4] <= magnitude[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+magnitude[5] <= magnitude[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+magnitude[6] <= magnitude[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+magnitude[7] <= magnitude[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+magnitude[8] <= magnitude[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+magnitude[9] <= magnitude[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+magnitude[10] <= magnitude[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+magnitude[11] <= magnitude[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+magnitude[12] <= magnitude[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+magnitude[13] <= magnitude[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+magnitude[14] <= magnitude[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+magnitude[15] <= magnitude[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tan[0] <= tan[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tan[1] <= tan[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tan[2] <= tan[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tan[3] <= tan[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|magtan|isqrt:isqrt1
 clk => clk.IN3
 dx[0] => dx[0].IN1
 dx[1] => dx[1].IN1
@@ -33,7 +105,7 @@ magnitude[9] <= magnitude[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 magnitude[10] <= magnitude[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|isqrt|sqr:sqrx
+|magtan|isqrt:isqrt1|sqr:sqrx
 clk => sum[0].CLK
 clk => sum[1].CLK
 clk => sum[2].CLK
@@ -478,7 +550,7 @@ square[15] <= square[15]$latch.DB_MAX_OUTPUT_PORT_TYPE
 square[16] <= square[16]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|isqrt|sqr:sqry
+|magtan|isqrt:isqrt1|sqr:sqry
 clk => sum[0].CLK
 clk => sum[1].CLK
 clk => sum[2].CLK
@@ -923,7 +995,7 @@ square[15] <= square[15]$latch.DB_MAX_OUTPUT_PORT_TYPE
 square[16] <= square[16]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|isqrt|root_sqr:root
+|magtan|isqrt:isqrt1|root_sqr:root
 clk => magnitude[0]~reg0.CLK
 clk => magnitude[1]~reg0.CLK
 clk => magnitude[2]~reg0.CLK
